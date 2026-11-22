@@ -9,7 +9,7 @@
 1. 下载并安装 Scriptable Android（支持 Android 8.0 及以上）：
 https://github.com/awesome-sean/scriptable-android/releases/download/v0.2.2/Scriptable-Android-0.2.2.apk
 2. 打开应用，点脚本页搜索框右侧的导入按钮（向下箭头）。
-3. 选择随附的“重大天气提醒.js”。此脚本需单独导入，不在应用内置示例中。
+3. 选择 scripts/android 中的“cqu-weather.js”，导入后通过脚本菜单改名为“重大天气提醒”。此脚本需单独导入。
 4. 打开脚本，点“运行”，可看到天气小组件预览。
 
 二、开启运行权限
@@ -39,8 +39,8 @@ https://github.com/awesome-sean/scriptable-android/releases/download/v0.2.2/Scri
 小组件预览和桌面刷新不会发送预约通知；通知由第三部分的自动化触发。
 
 五、验证定时通知（可选）
-1. 导入随附的“定时通知测试.js”，先手动运行，确认能收到通知。
-2. 新建自动化，执行脚本选“定时通知测试”，时间设为当前时间之后 3～5 分钟。
+1. 导入 scripts/common 中的“test-notification.js”，先手动运行，确认能收到通知。
+2. 新建自动化，执行脚本选“test-notification”，时间设为当前时间之后 3～5 分钟。
 3. 时区填写 Asia/Shanghai，参数留空，启用并保存。
 4. 返回桌面等待，到点收到的通知应显示“触发方式：后台自动化”。
 5. 测试结束后关闭或删除此任务，避免每天重复提醒。
