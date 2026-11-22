@@ -1,10 +1,10 @@
 <div align="center">
   <h1>重庆大学晴天预约提醒</h1>
   <p>提前两天看天气，晴天时提醒预约。</p>
-  <p><a href="#iphone-使用教程">iPhone 教程</a> · <a href="#安卓使用教程">安卓教程</a> · <a href="#验证定时通知">验证通知</a> · <a href="https://mobilereserve.cqu.edu.cn/#/login">预约入口</a></p>
+  <p><a href="#iphone-使用教程">iPhone 教程</a> · <a href="#安卓使用教程">Android教程</a> · <a href="#验证定时通知">验证通知</a> · <a href="https://mobilereserve.cqu.edu.cn/#/login">预约入口</a></p>
 </div>
 
-本项目由 **awesome-sean** 整理维护，提供重庆大学天气预约提醒脚本，以及 iPhone、安卓两套配置教程。安卓端运行环境为独立项目 **[Scriptable Android](https://github.com/awesome-sean/scriptable-android)**；它基于 [EdenleeGitHub/scriptable-android](https://github.com/EdenleeGitHub/scriptable-android) 派生。本仓库专门存放天气脚本和教程，不是 APK 源码仓库。
+本项目由 **awesome-sean** 整理维护，提供重庆大学天气预约提醒脚本，以及 iPhone、Android两套配置教程。安卓端运行环境为独立项目 **[Scriptable Android](https://github.com/awesome-sean/scriptable-android)**；它基于 [EdenleeGitHub/scriptable-android](https://github.com/EdenleeGitHub/scriptable-android) 派生。本仓库专门存放天气脚本和教程，不是 APK 源码仓库。
 
 ## 它会做什么
 
@@ -25,7 +25,7 @@
 | 手机 | 需要安装 | 天气脚本 | 定时方式 |
 | --- | --- | --- | --- |
 | iPhone | [Scriptable](https://scriptable.app/) + 系统“快捷指令” | [查看 JS](scripts/ios/cqu-weather.js) / [复制代码 TXT](scripts/ios/cqu-weather.txt) | 快捷指令个人自动化 |
-| 安卓 | [Scriptable Android 项目](https://github.com/awesome-sean/scriptable-android) / [下载 APK](https://github.com/awesome-sean/scriptable-android/releases/latest) | [下载安卓 JS](https://raw.githubusercontent.com/awesome-sean/cqu-sunny-reservation/main/scripts/android/cqu-weather.js) | 应用内“自动化” |
+| Android | [Scriptable Android 项目](https://github.com/awesome-sean/scriptable-android) / [下载 APK](https://github.com/awesome-sean/scriptable-android/releases/latest) | [下载安卓 JS](https://raw.githubusercontent.com/awesome-sean/cqu-sunny-reservation/main/scripts/android/cqu-weather.js) | 应用内“自动化” |
 
 下载整个项目：点本页 **Code → Download ZIP**，解压后按对应平台使用。两端天气逻辑相同，安装方式分别见下文。
 
