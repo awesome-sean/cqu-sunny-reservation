@@ -1,0 +1,82 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#f6f8fc"><meta name="description" content="安装 Scriptable Android，导入天气脚本，在应用内设置定时提醒。"><link rel="canonical" href="https://www.zhiyuxuan.click/cqu/android/"><link rel="icon" type="image/svg+xml" href="/assets/favicon.svg"><link rel="stylesheet" href="/assets/site.css?v=20261123"><script src="/assets/site.js?v=20261123" defer></script><title>安卓设置教程 · 晴天预约指南</title></head><body data-site-version="guides-20261123"><a class="skip" href="#main">跳到正文</a><header class="site-header"><div class="shell header-inner"><a class="brand" href="/"><span class="brand-mark"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M2 12h2m16 0h2M5 5l1.5 1.5m11 11L19 19M19 5l-1.5 1.5m-11 11L5 19"/></svg></span>晴天预约指南</a><nav class="header-nav" aria-label="主导航"><a href="/">首页</a><a href="/cqu/" class="active" aria-current="page">天气教程</a><a href="/scriptable/">软件</a></nav></div></header><main id="main" class="shell"><header class="page-head"><p class="breadcrumb"><a href="/cqu/">天气预约提醒</a> / 安卓设置教程</p><h1>安卓设置教程</h1><p class="lead">安装 Scriptable Android，导入天气脚本，在应用内设置定时提醒。</p><div class="actions"><a class="button primary" href="/downloads/Scriptable-Android-0.2.3.apk" download>下载 Android APK</a><a class="button" href="/downloads/cqu-weather-android.js" download>下载天气脚本</a></div><span id="copy-status" class="copy-status" aria-live="polite"></span></header><div class="guide-layout"><aside class="toc"><p>本页步骤</p><nav aria-label="本页目录"><a href="#1">1. 下载应用与脚本</a><a href="#2">2. 先完成运行设置</a><a href="#3">3. 新建每天的天气提醒</a><a href="#4">4. 添加桌面小组件（可选）</a><a href="#5">5. 验证定时通知</a><a href="#_1">常见问题</a></nav><div class="toc-download"><a class="button" href="/downloads/test-notification.js" download>下载通知测试脚本</a></div></aside><article class="guide-body"><h2 id="1">1. 下载应用与脚本</h2>
+<ol>
+<li>打开 <strong><a href="/downloads/Scriptable-Android-0.2.3.apk" download>Scriptable Android 下载页</a></strong>，下载 <code>Scriptable-Android-0.2.3.apk</code>。</li>
+<li>打开 APK，按系统提示允许安装。支持 Android 8.0 及以上。</li>
+<li>下载 <a href="/downloads/cqu-weather-android.js" download>安卓天气脚本 cqu-weather.js</a>。</li>
+<li>打开应用，点脚本页搜索框右侧的 <strong>导入按钮（向下箭头）</strong>，选择该 JS 文件。</li>
+<li>导入后打开脚本，点 <strong>运行</strong>，确认能显示天气预览。脚本在应用中显示为文件名时，可通过脚本菜单将其改名为 <strong>重大天气提醒</strong>。</li>
+</ol>
+<p>天气脚本需要单独导入，未打包进 APK 的内置示例。应用安装、版本更新与源码说明请看 <strong><a href="/scriptable/">软件下载说明</a></strong>。</p>
+<h2 id="2">2. 先完成运行设置</h2>
+<p>点底栏 <strong>自动化</strong>，按页首“先完成运行设置”的说明操作：</p>
+<ul>
+<li><strong>通知</strong>：允许应用发送通知；需要横幅、声音时，在系统通知设置中开启。</li>
+<li><strong>精确定时</strong>：允许应用按设定时间触发任务。</li>
+<li><strong>后台运行</strong>：按手机系统要求开启自启动、允许后台运行，并检查电池限制。</li>
+</ul>
+<p>此脚本使用固定地区，不需要定位权限。不同品牌的后台设置名称不同，以手机实际页面为准。</p>
+<h2 id="3">3. 新建每天的天气提醒</h2>
+<p>点 <strong>新建</strong>，按下表填写：</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>项目</th>
+<th>填写内容</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>名称</td>
+<td>重大天气提醒</td>
+</tr>
+<tr>
+<td>执行脚本</td>
+<td>选择刚导入的安卓天气脚本</td>
+</tr>
+<tr>
+<td>每天运行时间</td>
+<td>例如 <code>09:00</code>；多个时间可填 <code>09:00,18:00</code></td>
+</tr>
+<tr>
+<td>时区</td>
+<td><code>Asia/Shanghai</code></td>
+</tr>
+<tr>
+<td>脚本参数</td>
+<td><code>notify</code></td>
+</tr>
+<tr>
+<td>启用定时执行</td>
+<td>打开</td>
+</tr>
+</tbody>
+</table></div>
+<p>点 <strong>保存</strong>，确认显示的“下次”时间正确。可以返回桌面或锁屏等待，不要强行停止应用。可点“运行一次”检查脚本，然后查看任务的“结果”。</p>
+<p>后天不是晴天时不发预约通知，属于正常情况。“已完成”只表示脚本执行结束，不代表一定发送通知。</p>
+<h2 id="4">4. 添加桌面小组件（可选）</h2>
+<ol>
+<li>运行天气脚本，生成小组件预览。</li>
+<li>使用预览中的添加入口；也可长按桌面空白处 → 小组件，选择 Scriptable Android。</li>
+<li>选择天气脚本，内容尺寸选 <strong>小 · 默认</strong>，参数留空，保存。</li>
+<li>默认申请 <strong>2×2</strong>；最终占位由手机桌面决定，必要时长按调整大小。</li>
+</ol>
+<p>小组件只展示天气与预约入口。通知由第三步的自动化触发，两者分别设置。</p>
+<blockquote>
+<p>鸿蒙 5 及以上的部分兼容环境可能无法添加安卓桌面小组件。可先从桌面组件列表手动查找；如果没有入口，当前环境暂不支持该组件。后台定时通知也应单独测试，不能仅根据能安装、能导入脚本就判断可用。</p>
+</blockquote>
+<h2 id="5">5. 验证定时通知</h2>
+<p>现在不是晴天也能测试。通知测试脚本不联网、不判断天气，每次执行都提交一条通知。</p>
+<ol>
+<li>下载并导入 <a href="/downloads/test-notification.js" download>通知测试脚本</a>，先手动运行，确认能收到通知。</li>
+<li>新建自动化，执行脚本选刚导入的测试脚本，参数留空。</li>
+<li>时间设为当前时间之后 <strong>3～5 分钟</strong>，时区为 <code>Asia/Shanghai</code>，启用并保存。</li>
+<li>返回桌面等待；到点通知应显示“安卓后台自动化”和实际时间。</li>
+<li>测试结束后关闭或删除任务，避免每天重复提醒。</li>
+</ol>
+<h2 id="_1">常见问题</h2>
+<details><summary>运行后没有预约通知怎么办？</summary><p>天气脚本只有在后天白天预报严格为“晴”时才发预约通知。还要确认参数填写 notify、网络可用，并已允许通知。</p></details>
+<details><summary>手动通知正常，定时却没收到？</summary><p>先用测试脚本验证。iPhone 检查是否选择“立即运行”；安卓检查精确定时、自启动、后台与电池限制。返回自动化查看最近执行时间和结果。</p></details>
+<details><summary>有通知，但没有横幅或声音？</summary><p>在系统的应用通知设置中检查横幅、声音和勿扰模式。提交通知不等于系统一定显示横幅。</p></details>
+<details><summary>小组件显示未更新？</summary><p>检查网络，重新运行脚本查看错误。小组件不会用伪造天气代替查询结果。</p></details>
+
+<p>预报使用重庆市沙坪坝区数据，不是校园独立观测。本项目只做提醒，预约需自行完成。实际开放日期与时间以学校预约页面为准。系统调度和省电策略可能造成延迟。</p></article></div></main><footer class="site-footer"><div class="shell footer-inner"><div>由 awesome-sean 整理维护。<br>独立教程项目，与重庆大学、Scriptable、Apple 没有官方隶属或合作关系。</div><div class="footer-links"><a href="/cqu/iphone/">iPhone 教程</a><a href="/cqu/android/">安卓教程</a><a href="https://github.com/awesome-sean/cqu-sunny-reservation">天气脚本源码</a><a href="https://github.com/awesome-sean/scriptable-android">APK 源码</a></div></div></footer></body></html>

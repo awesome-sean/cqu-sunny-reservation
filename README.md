@@ -6,6 +6,14 @@
 
 本项目由 **awesome-sean** 整理维护，提供重庆大学天气预约提醒脚本，以及 iPhone、Android两套配置教程。安卓端运行环境为独立项目 **[Scriptable Android](https://github.com/awesome-sean/scriptable-android)**；它基于 [EdenleeGitHub/scriptable-android](https://github.com/EdenleeGitHub/scriptable-android) 派生。本仓库专门存放天气脚本和教程，不是 APK 源码仓库。
 
+## 在线教程与下载
+
+网站源码与静态页面现存放于本仓库，原有 Markdown 教程和脚本继续保留。
+
+- [网站首页](https://www.zhiyuxuan.click/) · [iPhone 图文教程](https://www.zhiyuxuan.click/cqu/iphone/) · [安卓图文教程](https://www.zhiyuxuan.click/cqu/android/)
+- [Scriptable Android 下载与说明](https://www.zhiyuxuan.click/scriptable/)
+- 图片、脚本、脚本包与 APK 由网站同域提供。[网站维护说明](docs/WEBSITE.md)
+
 ## 它会做什么
 
 在每天设定的时间，检查**北京时间后天的白天天气**；预报严格为 **“晴”** 时，发送预约提醒。点击通知可进入预约网页，由你自行完成预约。
