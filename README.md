@@ -68,6 +68,10 @@ Scriptable：运行“重大天气提醒”
 
 参数通过 Scriptable 的 [args.shortcutParameter](https://docs.scriptable.app/args/#shortcutparameter) 传给脚本。
 
+<p align="center"><img src="docs/images/iphone-shortcut.png" width="320" alt="iPhone 快捷指令配置：文本 notify 传入 Scriptable 运行脚本操作" /></p>
+
+图中“文本”填写 `notify`，下方 Run Script 的参数选择“文本”变量。截图中的“平安重大”是自定义名称；按本教程配置时选择你自己的“重大天气提醒”。图中时间仅为示例，可按需要设置。
+
 ### 3. 设置每天定时执行
 
 1. 打开“快捷指令”→ **自动化 → ＋**，创建个人自动化。
@@ -85,6 +89,10 @@ Scriptable：运行“重大天气提醒”
 3. 长按组件 → 编辑小组件，Script 选 **重大天气提醒**，Parameter 留空。
 
 小组件刷新由系统安排，不能用它代替第三步的定时自动化。
+
+<p align="center"><img src="docs/images/iphone-widget.jpg" width="320" alt="iPhone 桌面天气小组件示例，展示目标日期、天气、温度和提醒状态" /></p>
+
+图中为小组件展示示例，“多云／暂不提醒”表示本次未达到晴天提醒条件。截图使用了旧的地点名称“重大虎溪”，本仓库脚本显示为“重庆大学”；日期、天气和温度以实际查询结果为准。
 
 ## 安卓使用教程
 
